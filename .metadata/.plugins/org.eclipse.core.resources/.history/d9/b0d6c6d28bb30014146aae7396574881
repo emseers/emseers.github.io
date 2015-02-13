@@ -1,0 +1,25 @@
+/*
+   emseers.css
+   Emseers-Website
+   
+   Created by Arvind Suresh.
+   Copyright 2015 Arvind Suresh. All rights reserved.
+*/
+
+body {
+	font-family: "Arial";
+	font-size: 14px;
+}
+
+.Header {
+	background-color: red;
+	width: 100%;
+}
+
+.FirstLine {
+	align: center;
+	width: 900px;
+	height: 100px;
+	background: url(images/first-line.png) repeat center left;
+	text-align: right;
+}

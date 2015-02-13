@@ -1,0 +1,22 @@
+/*
+   emseers.css
+   Emseers-Website
+   
+   Created by Arvind Suresh.
+   Copyright 2015 Arvind Suresh. All rights reserved.
+*/
+
+body {
+
+}
+
+.Header {
+	width: 900px;
+	vertical-align: middle;
+	background-color: red;;
+}
+
+.FirstLine {
+	background: url(images/first-line.png) repeat center left;
+	text-alig: right;
+}
