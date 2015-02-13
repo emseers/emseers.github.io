@@ -11,12 +11,27 @@ body {
 	font-size: 14px;
 	color: white;
 }
-/*
+
+.TwitterBox {
+	margin-top: 0px;
+	background: #2980B9;
+	margin-left: 0px;
+    margin-right: 0px;
+	width: 180px;
+	height: auto;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 5px;
+	border-color: #FFFFFF;
+	border-style: solid;
+	border-width: 4px 4px 4px 4px;
+	float: left;
+}
+
 iframe[id^='twitter-widget-']{ 
-	width:5% !important;
+	width:100px !important;
 	
 }
-*/
 
 /*
 	vertical-align: middle;
@@ -26,10 +41,18 @@ iframe[id^='twitter-widget-']{
 	margin-left: auto;
     margin-right: auto;
 */
-.Header {
+
+.Main {
 	margin: 0;
 	padding: 0;
 	width: 100%;
+}
+
+.Header {
+	width: 1080px;
+	padding: 0;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 .FirstLine {
@@ -106,23 +129,7 @@ iframe[id^='twitter-widget-']{
 	border-style: solid;
 	border-width: 2px 4px 4px 4px;
 }
-/*
-.TwitterBox {
-	margin-top: 0px;
-	padding: 0;
-	background: #2980B9;
-	margin-left: auto;
-    margin-right: auto;
-	width: 13%;
-	height: auto;
-	font-size: 24px;
-	font-weight: bold;
-	padding: 5px;
-	border-color: #FFFFFF;
-	border-style: solid;
-	border-width: 2px 4px 4px 4px;
-}
-*/
+
 .Navigation ul {
 	list-style-type: none;
 	margin: 0;
