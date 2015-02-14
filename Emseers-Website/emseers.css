@@ -18,7 +18,7 @@ body {
 	margin-left: 0px;
     margin-right: 0px;
 	width: 180px;
-	height: auto;
+	height: 700px;
 	font-size: 24px;
 	font-weight: bold;
 	padding: 5px;
@@ -34,7 +34,7 @@ body {
 	margin-left: 0px;
     margin-right: 0px;
 	width: 180px;
-	height: auto;
+	height: 700px;
 	font-size: 24px;
 	font-weight: bold;
 	padding: 5px;
@@ -46,7 +46,7 @@ body {
 
 iframe[id^='twitter-widget-']{ 
 	width: 100px !important;
-	height: 720px;
+	height: 700px;
 }
 
 /*
