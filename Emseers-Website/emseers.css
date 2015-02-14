@@ -270,7 +270,7 @@ iframe[id^='twitter-widget-']{
 	padding: 5px;
 	border-color: #FFFFFF;
 	border-style: solid;
-	border-width: 3px 4px 4px 4px;
+	border-width: 3px 4px 2px 4px;
 }
 
 .ParagraphLeft {
@@ -289,4 +289,24 @@ iframe[id^='twitter-widget-']{
 	padding: 0;
 	text-align: justify;
 	text-justify: inter-word;
+}
+
+.Footer {
+	width: 1305px;
+	margin-left: auto;
+	margin-right: auto;
+    padding: 0;
+}
+
+.LastLine {
+    margin-left: auto;
+    margin-right: auto;
+    background: #2980B9;
+	width: 900px;
+	height: auto;
+	padding: 5px;
+	border-color: #FFFFFF;
+	border-style: solid;
+	border-width: 3px 4px 4px 4px;
+	font-size: 10px;
 }
