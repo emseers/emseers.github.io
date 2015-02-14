@@ -50,7 +50,7 @@ iframe[id^='twitter-widget-']{
 }
 
 .BlogsContainer {
-	background: #FFFFFF;
+	background: #D3D3D3;
 	height: 700px;
 	border-color: #D3D3D3;
 	border-style: solid;
@@ -59,6 +59,7 @@ iframe[id^='twitter-widget-']{
 }
 
 .BlogsTitle {
+	background: #FFFFFF;
 	padding: 7px;
 	font-weight: bold;
 	font-size: 15px;
@@ -66,6 +67,15 @@ iframe[id^='twitter-widget-']{
 	border-color: #D3D3D3;
 	border-style: hidden hidden solid hidden;
 	border-width: 1px;
+}
+
+.BlogsContent {
+	background: #FFFFFF;
+	height: 615px;
+	padding: 7px;
+	font-weight: normal;
+	font-size: 12px;
+	color: black;
 }
 
 /*
