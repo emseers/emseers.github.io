@@ -5,16 +5,23 @@
 	Copyright 2015 Arvind Suresh. All rights reserved.
 */
 
+html {
+	background: radial-gradient(ellipse at center, rgba(224,243,250,1) 0%,rgba(216,240,252,1) 30%,rgba(184,226,246,1) 70%,rgba(182,223,253,1) 100%);
+	background-repeat: no-repeat;
+	background-color: rgba(182,223,253,1);
+}
+
 body {
-	background: #000080;
+	background: radial-gradient(ellipse at center, rgba(224,243,250,1) 0%,rgba(216,240,252,1) 30%,rgba(184,226,246,1) 70%,rgba(182,223,253,1) 100%);
+	background-repeat: no-repeat;
 	font-family: "Arial";
 	font-size: 14px;
-	color: white;
+	color: black;
 }
 
 .TwitterBox {
 	margin-top: 0px;
-	background: #2980B9;
+	background: linear-gradient(135deg, rgba(224,243,250,1) 0%,rgba(216,240,252,1) 30%,rgba(184,226,246,1) 70%,rgba(182,223,253,1) 100%);50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%);
 	margin-left: 0px;
     margin-right: 0px;
 	width: 180px;
@@ -35,7 +42,7 @@ iframe[id^='twitter-widget-']{
 
 .Blogs {
 	margin-top: 0px;
-	background: #2980B9;
+	background: linear-gradient(135deg, rgba(224,243,250,1) 0%,rgba(216,240,252,1) 30%,rgba(184,226,246,1) 70%,rgba(182,223,253,1) 100%);50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%);
 	margin-left: 0px;
     margin-right: 0px;
 	width: 180px;
@@ -107,7 +114,7 @@ iframe[id^='twitter-widget-']{
 }
 
 .FirstLine {
-	background: #2980B9;
+	background: linear-gradient(135deg, rgba(224,243,250,1) 0%,rgba(216,240,252,1) 30%,rgba(184,226,246,1) 70%,rgba(182,223,253,1) 100%);50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%);
 	margin-left: auto;
     margin-right: auto;
 	width: 900px;
@@ -142,13 +149,7 @@ iframe[id^='twitter-widget-']{
 
 .Head button {
 	background: #3498db;
-	background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-	background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-	background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-	background-image: -o-linear-gradient(top, #3498db, #2980b9);
-	background-image: linear-gradient(to bottom, #3498db, #2980b9);
-	-webkit-border-radius: 2;
-	-moz-border-radius: 2;
+	background: linear-gradient(to bottom, rgba(195,233,244,1) 0%,rgba(216,240,252,1) 30%,rgba(184,226,246,1) 70%,rgba(182,223,253,1) 100%);
 	border-radius: 2px;
 	width: 20px;
 	height: 20px;
@@ -157,18 +158,14 @@ iframe[id^='twitter-widget-']{
 
 .Head button:hover {
 	background: #3cb0fd;
-	background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-	background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-	background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-	background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-	background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+	background: linear-gradient(to bottom, rgba(250,250,250,1) 0%,rgba(216,240,252,1) 30%,rgba(184,226,246,1) 70%,rgba(182,223,253,1) 100%);
 	text-decoration: none;
 }
 
 .Navigation {
 	margin-top: 0px;
 	padding: 0;
-	background: #2980B9;
+	background: linear-gradient(135deg, rgba(224,243,250,1) 0%,rgba(216,240,252,1) 30%,rgba(184,226,246,1) 70%,rgba(182,223,253,1) 100%);50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%);
 	margin-left: auto;
     margin-right: auto;
 	width: 900px;
@@ -200,12 +197,7 @@ iframe[id^='twitter-widget-']{
     width: auto;
     font-weight: bold;
     color: #FFFFFF;
-    background: #d3d934;
-    background-image: -webkit-linear-gradient(top, #d3d934, #ff0000);
-	background-image: -moz-linear-gradient(top, #d3d934, #ff0000);
-	background-image: -ms-linear-gradient(top, #d3d934, #ff0000);
-	background-image: -o-linear-gradient(top, #d3d934, #ff0000);
-	background-image: linear-gradient(to bottom, #d3d934, #ff0000);
+	background: linear-gradient(to bottom, rgba(6,109,171,1) 0%,rgba(138,187,215,1) 86%,rgba(197,222,234,1) 100%);
     text-align: center;
     padding: 4px;
     text-decoration: none;
@@ -220,12 +212,7 @@ iframe[id^='twitter-widget-']{
     width: auto;
     font-weight: bold;
     color: #FFFFFF;
-    background: #d3d934;
-    background-image: -webkit-linear-gradient(top, #d3d934, #ff0000);
-	background-image: -moz-linear-gradient(top, #d3d934, #ff0000);
-	background-image: -ms-linear-gradient(top, #d3d934, #ff0000);
-	background-image: -o-linear-gradient(top, #d3d934, #ff0000);
-	background-image: linear-gradient(to bottom, #d3d934, #ff0000);
+	background: linear-gradient(to bottom, rgba(6,109,171,1) 0%,rgba(138,187,215,1) 86%,rgba(197,222,234,1) 100%);
     text-align: center;
     padding: 4px;
     text-decoration: none;
@@ -236,22 +223,12 @@ iframe[id^='twitter-widget-']{
 }
 
 .Navigation a:active {
-	background: #ffff03;
-	background-image: -webkit-linear-gradient(top, #ffff03, #ff0000);
-	background-image: -moz-linear-gradient(top, #ffff03, #ff0000);
-	background-image: -ms-linear-gradient(top, #ffff03, #ff0000);
-	background-image: -o-linear-gradient(top, #ffff03, #ff0000);
-	background-image: linear-gradient(to bottom, #ffff03, #ff0000);
+	background: linear-gradient(to bottom, rgba(6,109,171,1) 0%,rgba(192,206,214,1) 86%,rgba(197,222,234,1) 100%);
 	border-style: hidden solid solid hidden;
 }
 
 .Navigation a:hover {
-	background: #ffff03;
-	background-image: -webkit-linear-gradient(top, #ffff03, #ff0000);
-	background-image: -moz-linear-gradient(top, #ffff03, #ff0000);
-	background-image: -ms-linear-gradient(top, #ffff03, #ff0000);
-	background-image: -o-linear-gradient(top, #ffff03, #ff0000);
-	background-image: linear-gradient(to bottom, #ffff03, #ff0000);
+	background: linear-gradient(to bottom, rgba(6,109,171,1) 0%,rgba(192,206,214,1) 86%,rgba(197,222,234,1) 100%);
 }
 
 .PageBody {
@@ -264,7 +241,7 @@ iframe[id^='twitter-widget-']{
 .LandingPageContent {
     margin-left: auto;
     margin-right: auto;
-    background: #2980B9;
+    background: linear-gradient(135deg, rgba(224,243,250,1) 0%,rgba(216,240,252,1) 30%,rgba(184,226,246,1) 70%,rgba(182,223,253,1) 100%);50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%);
 	width: 900px;
 	height: 600px;
 	padding: 5px;
@@ -308,7 +285,7 @@ iframe[id^='twitter-widget-']{
 .LastLine {
     margin-left: auto;
     margin-right: auto;
-    background: #2980B9;
+    background: linear-gradient(135deg, rgba(224,243,250,1) 0%,rgba(216,240,252,1) 30%,rgba(184,226,246,1) 70%,rgba(182,223,253,1) 100%);50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%);
 	width: 900px;
 	height: auto;
 	padding: 5px;
