@@ -28,7 +28,12 @@ body {
 	float: left;
 }
 
-.FacebookBox {
+iframe[id^='twitter-widget-']{ 
+	width: 100px !important;
+	height: 700px;
+}
+
+.Blogs {
 	margin-top: 0px;
 	background: #2980B9;
 	margin-left: 0px;
@@ -44,9 +49,23 @@ body {
 	float: right;
 }
 
-iframe[id^='twitter-widget-']{ 
-	width: 100px !important;
+.BlogsContainer {
+	background: #FFFFFF;
 	height: 700px;
+	border-color: #D3D3D3;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+}
+
+.BlogsTitle {
+	padding: 7px;
+	font-weight: bold;
+	font-size: 15px;
+	color: black;
+	border-color: #D3D3D3;
+	border-style: hidden hidden solid hidden;
+	border-width: 1px;
 }
 
 /*
