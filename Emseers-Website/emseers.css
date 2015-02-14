@@ -290,6 +290,13 @@ iframe[id^='twitter-widget-']{
 	text-align: justify;
 	text-justify: inter-word;
 }
+/**
+*	A bit more thought into centering this, since its an iframe doing auto margins
+*   did not have any effect on it.
+*/
+.VideoEmbed {
+	margin-left: 15%;
+}
 
 .Footer {
 	width: 1305px;
