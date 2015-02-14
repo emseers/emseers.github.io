@@ -29,8 +29,8 @@ body {
 }
 
 iframe[id^='twitter-widget-']{ 
-	width:100px !important;
-	
+	width: 100px !important;
+	height: 720px;
 }
 
 /*
@@ -65,7 +65,7 @@ iframe[id^='twitter-widget-']{
 	padding: 5px;
 	border-color: #FFFFFF;
 	border-style: solid;
-	border-width: 4px 4px 2px 4px;
+	border-width: 4px 4px 3px 4px;
 }
 
 .Head {
