@@ -4,17 +4,20 @@
 	Created by Arvind Suresh.
 	Copyright 2015 Arvind Suresh. All rights reserved.
 */
-
+/*
 html {
 	background: radial-gradient(ellipse at center, rgba(224,243,250,1) 0%,rgba(216,240,252,1) 30%,rgba(184,226,246,1) 70%,rgba(182,223,253,1) 100%);
 	background-repeat: no-repeat;
 	background-color: rgba(182,223,253,1);
 }
+*/
 
 body {
 	background: radial-gradient(ellipse at center, rgba(224,243,250,1) 0%,rgba(216,240,252,1) 30%,rgba(184,226,246,1) 70%,rgba(182,223,253,1) 100%);
+	height: 100%;
 	background-repeat: no-repeat;
-	font-family: "Arial";
+	background-attachment: fixed;
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
 	font-size: 14px;
 	color: black;
 }
