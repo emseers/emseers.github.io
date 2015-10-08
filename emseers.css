@@ -90,6 +90,12 @@ iframe[id^='twitter-widget-']{
 	color: black;
 }
 
+.BlogsIFrame {
+	position: relative;
+    height: 100%;
+    width: 100%; 
+}
+
 /*
 	vertical-align: middle;
 	margin-left: 20% !important;
@@ -272,6 +278,14 @@ iframe[id^='twitter-widget-']{
 	text-align: justify;
 	text-justify: inter-word;
 }
+
+.ParagraphCentre {
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
 /**
 *	A bit more thought into centering this, since its an iframe doing auto margins
 *   did not have any effect on it.
