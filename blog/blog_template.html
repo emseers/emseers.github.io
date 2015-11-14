@@ -11,13 +11,16 @@
 	<link rel="stylesheet" type="text/css" href="../emseers.css">
 	<link rel="shortcut icon" href="../Images/Icons/emseers.ico">
 	<!-- EDIT THIS -->
-	<title>Welcome to the template page title</title> <!
+	<title>Welcome to the template page title</title>
 </head>
 
-<body>
+<body onload="init()" onresize="init()">
 	<div class="MainTitle">
 		<div class="Header">
-			<div class="TwitterBox"> <a class="twitter-timeline" href="https://twitter.com/Emseers" data-widget-id="566352670127316994">Tweets by @Emseers</a>
+			<div class="TwitterBox">
+				<a class="twitter-timeline" href="https://twitter.com/Emseers" data-widget-id="566352670127316994">
+					Tweets by @Emseers
+				</a>
 				<script>
 					! function(d, s, id) {
 						var js, fjs = d.getElementsByTagName(s)[0],
@@ -31,7 +34,7 @@
 					}(document, "script", "twitter-wjs");
 				</script>
 			</div>
-			<div class="Blogs">
+			<div class="Blogs" id="blogs">
 				<div class="BlogsContainer">
 					<div class="BlogsTitle">
 						Our Blog
@@ -41,7 +44,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="FirstLine">
+			<div class="FirstLine" id="firstLine">
 				<div class="Head">
 					<ul>
 						<li>
@@ -58,20 +61,20 @@
 					</ul>
 				</div>
 			</div>
-			<div class="Navigation">
+			<div class="Navigation" id="navigation">
 				<ul>
 					<li> <a href="http://emseers.github.io/">Home</a> </li>
 					<li> <a href="../team.html">Team</a> </li>
-					<li> <a href="../#">About</a> </li>
-					<li> <a href="../#">Contact</a> </li>
-					<li> <a href="../#">Blog</a> </li>
+					<li> <a href="#">About</a> </li>
+					<li> <a href="#">Contact</a> </li>
+					<li> <a href="#">Blog</a> </li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	<div class="Main">
 		<div class="PageBody">
-			<div class="LandingPageContent">
+			<div class="LandingPageContent" id="landingPageContent">
 				<!-- EDIT THIS -->
 				<h1>Welcome to the template page title</h1>
 				<!-- EDIT THIS -->
@@ -79,7 +82,7 @@
 				<!-- EDIT THIS -->
 				<!-- Please host iamges on the Emseers imgur account (not the github repo) also remember resize images to fit as needed-->
 				<a href="http://imgur.com/zNFDcMJ"><img src="http://i.imgur.com/zNFDcMJ.png" title="source: imgur.com" style="height:50%;"/></a>
-				<div class="ParagraphCentre">
+				<div class="ParagraphCentre" id="paragraphCentre">
 					<p>
 						This is my template. There are many like it, but this one is mine.
 -						My template is my best friend. It is my life. I must master it as I must master my life.
@@ -94,7 +97,7 @@
 		</div>
 	</div>
 	<div class="Footer">
-		<div class="LastLine">
+		<div class="LastLine" id="lastLine">
 			<div class="Head">
 				<ul>
 					<li>
@@ -112,6 +115,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="blogInit.js"></script>
 </body>
 
 </html>
