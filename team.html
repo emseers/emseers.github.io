@@ -5,14 +5,17 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="emseers.css">
-	<link rel="shortcut icon" href="Images/Icons/emseers.ico">
-	<title>Emseers - Team (TWT)</title>
+	<link rel="shortcut icon" href="images/Icons/emseers.ico">
+	<title>Emseers - Team</title>
 </head>
 
-<body>
+<body onload="init()" onresize="init()">
 	<div class="MainTitle">
-		<div class="Header">
-			<div class="TwitterBox"> <a class="twitter-timeline" href="https://twitter.com/Emseers" data-widget-id="566352670127316994">Tweets by @Emseers</a>
+		<div class="Header" id="header">
+			<div class="TwitterBox" id="twitterBox">
+				<a class="twitter-timeline" href="https://twitter.com/Emseers" data-widget-id="566352670127316994">
+					Tweets by @Emseers
+				</a>
 				<script>
 					! function(d, s, id) {
 						var js, fjs = d.getElementsByTagName(s)[0],
@@ -26,17 +29,17 @@
 					}(document, "script", "twitter-wjs");
 				</script>
 			</div>
-			<div class="Blogs">
+			<div class="Blogs" id="blogs">
 				<div class="BlogsContainer">
 					<div class="BlogsTitle">
-						Our Blog
+						<a href="#">Blog</a>
 					</div>
 					<div class="BlogsContent">
 						<iframe class="BlogsIFrame" src="blogIndex.html" frameBorder="0"></iframe>
 					</div>
 				</div>
 			</div>
-			<div class="FirstLine">
+			<div class="FirstLine" id="firstLine">
 				<div class="Head">
 					<ul>
 						<li>
@@ -53,103 +56,108 @@
 					</ul>
 				</div>
 			</div>
-			<div class="Navigation">
+			<div class="Navigation" id="navigation">
 				<ul>
-					<li> <a href="http://emseers.github.io/">Home</a> </li>
+					<li> <a href="/">Home</a> </li>
 					<li> <a href="team.html">Team</a> </li>
+					<li> <a href="about.html">About</a> </li>
 					<li> <a href="#">Contact</a> </li>
+					<li> <a href="#">Blog</a> </li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	<div class="Main">
 		<div class="PageBody">
-			<div class="LandingPageContent">
-				<h1>Our E-sports team</h1>
-				<div class="ParagraphLeft">
-					<p>
-						The Emseers are a proud sponsor of The Wijay Tribe [TWT], with Dota 2 being the major sport. The team carries the banner of the
-						Witch Doctor to battle (Poisonrune's artwork).
-					</p>
-					<p>
-						The Wijay Tribe is known for trying crazy lineups and unusual matchups against other teams and have seen much success in doing so.
-						Check out the past games at <a href="http://www.dotabuff.com/teams/1326823" target="_blank">http://www.dotabuff.com/teams/1326823</a>.
-					</p>
-					<br/>
-				</div>
-				<div class="ParagraphRight">
-					<div align="center">
-						<img src="images/twt_logo.png" alt="TWT Logo" style="width:50%; height:50%"> 
+			<div class="LandingPageContent" id="landingPageContent">
+				<div>
+					<h1>Our E-sports team</h1>
+					<div class="ParagraphLeft" id="paragraphLeft">
+						<p>
+							The Emseers are a proud sponsor of The Wijay Tribe [TWT], with Dota 2 being the major (and only) sport. The team carries the banner of the
+							Witch Doctor to battle (Poisonrune's artwork).
+						</p>
+						<p>
+							The Wijay Tribe is known for trying crazy lineups and unusual matchups against other teams and have seen much success in doing so.
+							Check out the past games at <a href="http://www.dotabuff.com/teams/1326823" target="_blank">http://www.dotabuff.com/teams/1326823</a>.
+						</p>
+						<br/>
+					</div>
+					<div class="ParagraphRight" id="paragraphRight">
+						<div align="center">
+							<img src="images/twt_logo.png" alt="TWT Logo" style="width:50%; height:50%"> 
+						</div>
 					</div>
 				</div>
-				<h1>Team Overview</h1>
-				<table style="width: 100%">
-					<tr>
-						<td><b>Player</b></td>
-						<td><b>Positions</b></td>
-						<td><b>Heroes</b></td>
-					</tr>
-					<tr>
-						<td>Boarnoah</td>
-						<td>4/5/1</td>
-						<td>
-							<img src="images/Hero_Icons/Crystal_Maiden.png" alt="Crystal Maiden" style="width:10%; height:10%">
-							<img src="images/Hero_Icons/Silencer.png" alt="Silencer" style="width:10%; height:10%">
-							<img src="images/Hero_Icons/Warlock.png" alt="Warlock" style="width:10%; height:10%">
-							<img src="images/Hero_Icons/Medusa.png" alt="Medusa" style="width:10%; height:10%">
-							<img src="images/Hero_Icons/Jakiro.png" alt="Jakiro" style="width:10%; height:10%">
-						</td>
-					</tr>
-					<tr>
-						<td>Shadowryas</td>
-						<td>2/4/1</td>
-						<td>
-							<img src="images/Hero_Icons/Zeus.png" alt="Zeus" style="width:10%; height:10%">
-							<img src="images/Hero_Icons/Sven.png" alt="Sven" style="width:10%; height:10%">
-							<img src="images/Hero_Icons/Night_Stalker.png" alt="Night Stalker" style="width:10%; height:10%">
-							<img src="images/Hero_Icons/Omniknight.png" alt="Omniknight" style="width:10%; height:10%">
-							<img src="images/Hero_Icons/Slark.png" alt="Slark" style="width:10%; height:10%">
-						</td>
-					</tr>
-					<tr>
-						<td>Poisonrune</td>
-						<td>5/2/1</td>
-						<td>
-							<img src="images/Hero_Icons/Io.png" alt="Io" style="width:10%; height:10%">
-							<img src="images/Hero_Icons/Rubick.png" alt="Rubick" style="width:10%; height:10%">
-							<img src="images/Hero_Icons/Spectre.png" alt="Spectre" style="width:10%; height:10%">
-							<img src="images/Hero_Icons/Wraith_King.png" alt="Wraith King" style="width:10%; height:10%">
-							<img src="images/Hero_Icons/Tusk.png" alt="Tusk" style="width:10%; height:10%">
-						</td>
-					</tr>
-					<tr>
-						<td>ArvindMC</td>
-						<td>3/4/5</td>
-						<td>
-							<img src="images/Hero_Icons/Juggernaut.png" alt="Juggernaut" style="width:10%; height:10%">
-							<img src="images/Hero_Icons/Witch_Doctor.png" alt="Witch Doctor" style="width:10%; height:10%">
-							<img src="images/Hero_Icons/Timbersaw.png" alt="Timbersaw" style="width:10%; height:10%">
-							<img src="images/Hero_Icons/Storm_Spirit.png" alt="Storm Spirit" style="width:10%; height:10%">
-							<img src="images/Hero_Icons/Sand_King.png" alt="Sand King" style="width:10%; height:10%">
-						</td>
-					</tr>
-					<tr>
-						<td>Sir Ram</td>
-						<td>1/4/5</td>
-						<td>
-							<img src="images/Hero_Icons/Tiny.png" alt="Tiny" style="width:10%; height:10%">
-							<img src="images/Hero_Icons/Slark.png" alt="Slark" style="width:10%; height:10%">
-							<img src="images/Hero_Icons/Necrophos.png" alt="Necrophos" style="width:10%; height:10%">
-							<img src="images/Hero_Icons/Disruptor.png" alt="Disruptor" style="width:10%; height:10%">
-							<img src="images/Hero_Icons/Keeper_of_the_Light.png" alt="Keeper of the Light" style="width:10%; height:10%">
-						</td>
-					</tr>
-				</table>
+				<div>
+					<table style="width: 100%; table-layout : fixed">
+						<tr>
+							<td style="width: 20%"><b>Player</b></td>
+							<td style="width: 20%"><b>Positions</b></td>
+							<td style="width: 60%"><b>Heroes</b></td>
+						</tr>
+						<tr>
+							<td>boarnoah</td>
+							<td>5</td>
+							<td>
+								<img src="images/Hero_Icons/Crystal_Maiden.png" alt="Crystal Maiden" style="width:15%; height:15%">
+								<img src="images/Hero_Icons/Silencer.png" alt="Silencer" style="width:15%; height:15%">
+								<img src="images/Hero_Icons/Winter_Wyvern.png" alt="Winter Wyvern" style="width:15%; height:15%">
+								<img src="images/Hero_Icons/Dazzle.png" alt="Dazzle" style="width:15%; height:15%">
+								<img src="images/Hero_Icons/Jakiro.png" alt="Jakiro" style="width:15%; height:15%">
+							</td>
+						</tr>
+						<tr>
+							<td>Shadowryas</td>
+							<td>1/2</td>
+							<td>
+								<img src="images/Hero_Icons/Zeus.png" alt="Zeus" style="width:15%; height:15%">
+								<img src="images/Hero_Icons/Bloodseeker.png" alt="Bloodseeker" style="width:15%; height:15%">
+								<img src="images/Hero_Icons/Ursa.png" alt="Ursa" style="width:15%; height:15%">
+								<img src="images/Hero_Icons/Spirit_Breaker.png" alt="Spirit Breaker" style="width:15%; height:15%">
+								<img src="images/Hero_Icons/Slark.png" alt="Slark" style="width:15%; height:15%">
+							</td>
+						</tr>
+						<tr>
+							<td>poisonrune</td>
+							<td>3/4/2</td>
+							<td>
+								<img src="images/Hero_Icons/Io.png" alt="Io" style="width:15%; height:15%">
+								<img src="images/Hero_Icons/Rubick.png" alt="Rubick" style="width:15%; height:15%">
+								<img src="images/Hero_Icons/Sniper.png" alt="Sniper" style="width:15%; height:15%">
+								<img src="images/Hero_Icons/Storm_Spirit.png" alt="Storm Spirit" style="width:15%; height:15%">
+								<img src="images/Hero_Icons/Tusk.png" alt="Tusk" style="width:15%; height:15%">
+							</td>
+						</tr>
+						<tr>
+							<td>The Right Mouse</td>
+							<td>1/4</td>
+							<td>
+								<img src="images/Hero_Icons/Slark.png" alt="Slark" style="width:15%; height:15%">
+								<img src="images/Hero_Icons/Witch_Doctor.png" alt="Witch Doctor" style="width:15%; height:15%">
+								<img src="images/Hero_Icons/Timbersaw.png" alt="Timbersaw" style="width:15%; height:15%">
+								<img src="images/Hero_Icons/Abaddon.png" alt="Abaddon" style="width:15%; height:15%">
+								<img src="images/Hero_Icons/Sand_King.png" alt="Sand King" style="width:15%; height:15%">
+							</td>
+						</tr>
+						<tr>
+							<td>Sir Ram</td>
+							<td>3/2/4/1/5</td>
+							<td>
+								<img src="images/Hero_Icons/Tiny.png" alt="Tiny" style="width:15%; height:15%">
+								<img src="images/Hero_Icons/Slardar.png" alt="Slardar" style="width:15%; height:15%">
+								<img src="images/Hero_Icons/Riki.png" alt="Riki" style="width:15%; height:15%">
+								<img src="images/Hero_Icons/Disruptor.png" alt="Disruptor" style="width:15%; height:15%">
+								<img src="images/Hero_Icons/Enigma.png" alt="Enigma.png" style="width:15%; height:15%">
+							</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div class="Footer">
-		<div class="LastLine">
+		<div class="LastLine" id="lastLine">
 			<div class="Head">
 				<ul>
 					<li>
@@ -167,6 +175,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="init.js"></script>
 </body>
 
 </html>

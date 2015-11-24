@@ -5,14 +5,17 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="emseers.css">
-	<link rel="shortcut icon" href="Images/Icons/emseers.ico">
+	<link rel="shortcut icon" href="images/Icons/emseers.ico">
 	<title>Emseers</title>
 </head>
 
-<body>
+<body onload="init()" onresize="init()">
 	<div class="MainTitle">
-		<div class="Header">
-			<div class="TwitterBox"> <a class="twitter-timeline" href="https://twitter.com/Emseers" data-widget-id="566352670127316994">Tweets by @Emseers</a>
+		<div class="Header" id="header">
+			<div class="TwitterBox" id="twitterBox">
+				<a class="twitter-timeline" href="https://twitter.com/Emseers" data-widget-id="566352670127316994">
+					Tweets by @Emseers
+				</a>
 				<script>
 					! function(d, s, id) {
 						var js, fjs = d.getElementsByTagName(s)[0],
@@ -26,17 +29,17 @@
 					}(document, "script", "twitter-wjs");
 				</script>
 			</div>
-			<div class="Blogs">
+			<div class="Blogs" id="blogs">
 				<div class="BlogsContainer">
 					<div class="BlogsTitle">
-						Our Blog
+						<a href="#">Blog</a>
 					</div>
 					<div class="BlogsContent">
 						<iframe class="BlogsIFrame" src="blogIndex.html" frameBorder="0"></iframe>
 					</div>
 				</div>
 			</div>
-			<div class="FirstLine">
+			<div class="FirstLine" id="firstLine">
 				<div class="Head">
 					<ul>
 						<li>
@@ -53,46 +56,52 @@
 					</ul>
 				</div>
 			</div>
-			<div class="Navigation">
+			<div class="Navigation" id="navigation">
 				<ul>
-					<li> <a href="http://emseers.github.io/">Home</a> </li>
+					<li> <a href="/">Home</a> </li>
 					<li> <a href="team.html">Team</a> </li>
+					<li> <a href="about.html">About</a> </li>
 					<li> <a href="#">Contact</a> </li>
+					<li> <a href="#">Blog</a> </li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	<div class="Main">
 		<div class="PageBody">
-			<div class="LandingPageContent">
-				<h1>Welcome to the home of the Emseers</h1>
-				<div class="ParagraphLeft">
+			<div class="LandingPageContent" id="landingPageContent">
+				<h1>Home</h1>
+				<div class="ParagraphLeft" id="paragraphLeft">
+					<h3>01/11/2015 By Emseers</h3>
 					<p>
-						Say hello to a brand new type of entertainment brought to you by a group of talented individuals who have the passion for
-						quality entertainment. Our short videos combined with tasteful music are liked by many.
+						Brand new custom game released for Dota 2! Remember that good old Impossible Bosses gamemode you used to play in Warcraft
+						3? Guess what? It has just been brought	to Dota 2 Reborn by <a href="http://steamcommunity.com/id/poisonrune/" target="_blank">poisonrune</a>,
+						with even more features! Go check it out now:
+						<a href="http://steamcommunity.com/sharedfiles/filedetails/?id=537033266" target="_blank">http://steamcommunity.com/sharedfiles/filedetails/?id=537033266</a>.
+						Don't forget to share it with your friends.
 					</p>
+					<div>
+						<img src="http://images.akamai.steamusercontent.com/ugc/391046504770106770/83E81887035EBF057DB95069614DB67B2289543F/" alt="Screenshot" style="width:100%;height:100%">
+					</div>
 				</div>
-				<div class="ParagraphRight">
+				<div class="ParagraphRight" id="paragraphRight">
+					<h3>31/10/2015 By Emseers</h3>
 					<p>
-						If you are new and don't know what we do, check out this video for starters:
+						🎃 Happy Halloween everyone! Just a quick update on what we've been up to lately. We decided to try out a brand new game now
+						to see how you guys like it! <a href="http://steamcommunity.com/id/sirram/" target="_blank">Sir Ram</a> will be streaming
+						himself playing <a href="http://store.steampowered.com/app/227300/" target="_blank">Euro Truck Simulator 2</a> every weekday
+						at around 8:30 pm to 9:30 pm EST. Hope you enjoy it. See you there! (To watch the stream, all you have to do is go to Sir
+						Ram's Steam profile and if he is in game, just press the watch button.)
 					</p>
-				</div>
-				
-				<div>
-					<center>
-						<iframe 
-							width="640" 
-							height="360" 
-							src="https://www.youtube.com/embed/PTN2FcTyJFA?feature=player_detailpage" 
-							frameborder="0" allowfullscreen>
-						</iframe>
-					</center>
+					<div>
+						<img src="http://cdn.akamai.steamstatic.com/steam/apps/227300/ss_d860c95f83c4b3ef769c9fed2d22aaa3a680f4ba.1920x1080.jpg?t=1447073742" alt="Screenshot" style="width:100%;height:100%">
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="Footer">
-		<div class="LastLine">
+		<div class="LastLine" id="lastLine">
 			<div class="Head">
 				<ul>
 					<li>
@@ -110,6 +119,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="init.js"></script>
 </body>
 
 </html>
