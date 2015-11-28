@@ -1,0 +1,219 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--
+	!!!IMPORTANT!!!
+	ALL SECTIONS THAT NEED TO BE EDITED TO CREATE A NEW BLOG ENTRY HAVE "EDIT THIS" over it
+-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Git source control Unity3D and other game
+	projects with binary Assets">
+	<link rel="stylesheet" type="text/css" href="../emseers.css">
+	<link rel="shortcut icon" href="../images/Icons/emseers.ico">
+	<!-- EDIT THIS -->
+	<title>Git Source Control for games with Assets(Unity3D etc...)</title>
+</head>
+
+<body onload="init()" onresize="init()">
+	<div class="MainTitle">
+		<div class="Header" id="header">
+			<div class="TwitterBox" id="twitterBox">
+				<a class="twitter-timeline" href="https://twitter.com/Emseers" data-widget-id="566352670127316994">
+					Tweets by @Emseers
+				</a>
+				<script>
+					! function(d, s, id) {
+						var js, fjs = d.getElementsByTagName(s)[0],
+							p = /^http:/.test(d.location) ? 'http' : 'https';
+						if (!d.getElementById(id)) {
+							js = d.createElement(s);
+							js.id = id;
+							js.src = p + "://platform.twitter.com/widgets.js";
+							fjs.parentNode.insertBefore(js, fjs);
+						}
+					}(document, "script", "twitter-wjs");
+				</script>
+			</div>
+			<div class="Blogs" id="blogs">
+				<div class="BlogsContainer">
+					<div class="BlogsTitle">
+						<a href="#">Blog</a>
+					</div>
+					<div class="BlogsContent">
+						<iframe class="BlogsIFrame" src="../blogIndex.html" frameBorder="0"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="FirstLine" id="firstLine">
+				<div class="Head">
+					<ul>
+						<li>
+							<a href="http://steamcommunity.com/groups/emseers" target="_blank">
+								<button> <img src="../images/steam_logo.png" alt="Steam" style="width:10px;height:10px"> </button>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/user/Emseers" target="_blank">
+								<button> <img src="../images/youtube_logo.png" alt="YouTube" style="width:10px;height:10px"> </button>
+							</a>
+						</li>
+						<li style="line-height:20px"> Emseers™ </li>
+					</ul>
+				</div>
+			</div>
+			<div class="Navigation" id="navigation">
+				<ul>
+					<li> <a href="../">Home</a> </li>
+					<li> <a href="../team.html">Team</a> </li>
+					<li> <a href="../about.html">About</a> </li>
+					<li> <a href="#">Contact</a> </li>
+					<li> <a href="#">Blog</a> </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="Main">
+		<div class="PageBody">
+			<div class="LandingPageContent" id="landingPageContent">
+				<!-- EDIT THIS -->
+				<h1>Git Source Control for games with Assets(Unity3D etc...)</h1>
+				<!-- EDIT THIS -->
+				<h3>2015/11/27 By Boarnoah</h3>
+				<!-- EDIT THIS -->
+				<!-- Please host iamges on the Emseers imgur account (not the github repo) also remember resize images to fit as needed-->
+				
+				<div class="ParagraphCentre" id="paragraphCentre">
+					<p>
+						<i>
+							This guide will focus mainly on Unity 3D (as an 
+							extension to <a href="http://tylrmac.com/configuring-a-unity3d-project-for-github/" 
+							target="_blank">this</a> excellent post), but should be equally applicable for 
+							most other game/multimedia projects that need Git source control.
+						</i>
+					</p>
+					<p>
+						It is very tempting to at least initially start storing 
+						binary assets along with your source code when working on 
+						a game. Its generally understood that Git doesn't do great 
+						job handling binary assets, leading to slowdowns later down 
+						the line. Removing binary files later does not decrease the 
+						size of your repo as the assets are now permanently a part 
+						of your repository’s history.
+					</p>
+					<p>
+						The solution then comes to storing these binary assets 
+						separate from your source, while still maintaining parity 
+						across all developers. Online data storage services such 
+						as Google Drive/Dropbox are usually enough to handle this. 
+						One important note would be to do regular backups yourself 
+						to other storage medium and as neither service mentioned 
+						has much in the way of version history.
+					</p>
+
+					<p>
+						For this guide we'll showcasing an example that's hosted 
+						publicly on <a href="https://github.com/Emseers/mouse2015"
+						target="_blank">GitHub</a> (this project has binary assets 
+						on Google Drive), the Unity's specific steps can be 
+						ignored for other platforms.
+					</p>
+					
+					<p>
+						For convenience we use <a href="http://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html"
+						target="_blank">Link</a> Shell Extension to create 
+						the Symbolic Links on Windows and SourceTree as our Git client.
+					</p>
+					
+					<h3>Configuring Unity3D to serialize data (Unity Specific)</h3>
+					<p>
+						Under Project Settings – Editor set Visible Meta Files and 
+						Asset Serialization: Force Text
+					</p>
+					<p>
+						The meta files help Unity to reference Assets in Editor. 
+						Forcing Asset Serialization will make Unity write .scene 
+						files in human readable text. Therefore you can directly 
+						add .scene files to your git repository.
+					</p>
+					<p>
+						<b>IMPORTANT</b>: Asset serialization is HIGHLY recommended, 
+						having binary scene files will wreck havoc on your 
+						repository/cloud storage if say two developers tweak 
+						objects in the scene. 
+					</p>
+					
+					<a href="http://imgur.com/90IQaTR" target="_blank" >
+					<img src="http://i.imgur.com/90IQaTR.png" title="source: imgur.com"
+					width="100%"/></a>
+					
+					<h3>Cloud Storage (Google Drive)</h3>
+					<p>
+						This is where we'll be storing/syncing our binary assets. 
+						For the example project we add developers with share 
+						access to the directory.
+						
+						The files are synced to their local computer with the 
+						desktop application (both Google Drive/Dropbox have standalone applications).
+					</p>
+					
+					<a href="http://imgur.com/7ekwSt6" target="_blank">
+					<img src="http://i.imgur.com/7ekwSt6.png" title="source: imgur.com" 
+					width="100%"/></a>
+					
+					<h3>Linking the Cloud Storage files to the Project Directory</h3>
+					<p>
+						We can symbolic link folders from our cloud drive (of 
+						which the local copy is synced online) to it's location 
+						in our project repository. 
+					</p>
+					
+					<a href="http://imgur.com/KxEcXBt" target="_blank">
+					<img src="http://i.imgur.com/KxEcXBt.png" title="source: imgur.com" 
+					width="100%"/></a>
+					
+					<h3>Adding binary assets to .gitignore</h3>
+					<p>
+						To keep things simple we have kept all our binary cloud 
+						synced assets in folders, and we just .gitignore the 
+						entire “asset” folders at a time.
+					</p>
+					
+					<a href="http://imgur.com/2YWTBhc" target="_blank">
+					<img src="http://i.imgur.com/2YWTBhc.png" title="source: imgur.com" 
+					width="100%"/></a>
+					
+					<p>
+						Hope this is useful for anyone contemplating how to 
+						manage their binary assets with Git. We don't have  a 
+						comment section on this blog yet, we can be reached 
+						through email.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="Footer">
+		<div class="LastLine" id="lastLine">
+			<div class="Head">
+				<ul>
+					<li>
+						<a href="https://www.youtube.com/user/Boarnoah" target="_blank">
+							<button> <img src="../images/boarnoah.png" alt="Steam" style="width:10px;height:10px"> </button>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.youtube.com/user/ArvindMC" target="_blank">
+							<button> <img src="../images/arvindmc.png" alt="YouTube" style="width:10px;height:10px"> </button>
+						</a>
+					</li>
+					<li style="line-height:20px"> ©Emseers. 2015. </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="blogInit.js"></script>
+</body>
+
+</html>
