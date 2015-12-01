@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="../emseers.css">
 	<link rel="shortcut icon" href="../images/Icons/emseers.ico">
 	<!-- EDIT THIS -->
-	<title>Git Source Control for games with Assets(Unity3D etc...)</title>
+	<title>Git Source Control for games with Binary Assets (Unity3D etc...)</title>
 </head>
 
 <body onload="init()" onresize="init()">
@@ -39,7 +39,7 @@
 			<div class="Blogs" id="blogs">
 				<div class="BlogsContainer">
 					<div class="BlogsTitle">
-						<a href="#">Blog</a>
+						<a href="#">Blogs</a>
 					</div>
 					<div class="BlogsContent">
 						<iframe class="BlogsIFrame" src="../blogIndex.html" frameBorder="0"></iframe>
@@ -78,7 +78,7 @@
 		<div class="PageBody">
 			<div class="LandingPageContent" id="landingPageContent">
 				<!-- EDIT THIS -->
-				<h1>Git Source Control for games with Assets(Unity3D etc...)</h1>
+				<h1>Git Source Control for games with Assets (Unity3D etc...)</h1>
 				<!-- EDIT THIS -->
 				<h3>2015/11/27 By Boarnoah</h3>
 				<!-- EDIT THIS -->
@@ -87,61 +87,61 @@
 				<div class="ParagraphCentre" id="paragraphCentre">
 					<p>
 						<i>
-							This guide will focus mainly on Unity 3D (as an 
-							extension to <a href="http://tylrmac.com/configuring-a-unity3d-project-for-github/" 
-							target="_blank">this</a> excellent post), but should be equally applicable for 
+							This guide will focus mainly on Unity 3D (as an
+							extension to <a href="http://tylrmac.com/configuring-a-unity3d-project-for-github/"
+							target="_blank">this</a> excellent post), but should be equally applicable for
 							most other game/multimedia projects that need Git source control.
 						</i>
 					</p>
 					<p>
-						It is very tempting to at least initially start storing 
-						binary assets along with your source code when working on 
-						a game. Its generally understood that Git doesn't do great 
-						job handling binary assets, leading to slowdowns later down 
-						the line. Removing binary files later does not decrease the 
-						size of your repo as the assets are now permanently a part 
+						It is very tempting to at least initially start storing
+						binary assets along with your source code when working on
+						a game. Its generally understood that Git doesn't do great
+						job handling binary assets, leading to slowdowns later down
+						the line. Removing binary files later does not decrease the
+						size of your repo as the assets are now permanently a part
 						of your repository’s history.
 					</p>
 					<p>
-						The solution then comes to storing these binary assets 
+						The solution then comes to storing these binary assets
 						separate from your source, while still maintaining parity 
-						across all developers. Online data storage services such 
-						as Google Drive/Dropbox are usually enough to handle this. 
-						One important note would be to do regular backups yourself 
-						to other storage medium and as neither service mentioned 
+						across all developers. Online data storage services such
+						as Google Drive/Dropbox are usually good enough to handle
+						this. One important note would be to do regular backups yourself
+						to other storage medium and as neither service mentioned
 						has much in the way of version history.
 					</p>
 
 					<p>
-						For this guide we'll showcasing an example that's hosted 
+						For this guide we'll showcasing an example that's hosted
 						publicly on <a href="https://github.com/Emseers/mouse2015"
-						target="_blank">GitHub</a> (this project has binary assets 
-						on Google Drive), the Unity's specific steps can be 
+						target="_blank">GitHub</a> (this project has binary assets
+						on Google Drive), the Unity's specific steps can be
 						ignored for other platforms.
 					</p>
 					
 					<p>
 						For convenience we use <a href="http://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html"
-						target="_blank">Link</a> Shell Extension to create 
+						target="_blank">Link</a> Shell Extension to create
 						the Symbolic Links on Windows and SourceTree as our Git client.
 					</p>
 					
 					<h3>Configuring Unity3D to serialize data (Unity Specific)</h3>
 					<p>
-						Under Project Settings – Editor set Visible Meta Files and 
+						Under Project Settings – Editor set Visible Meta Files and
 						Asset Serialization: Force Text
 					</p>
 					<p>
-						The meta files help Unity to reference Assets in Editor. 
-						Forcing Asset Serialization will make Unity write .scene 
-						files in human readable text. Therefore you can directly 
+						The meta files help Unity to reference Assets in Editor.
+						Forcing Asset Serialization will make Unity write .scene
+						files in human readable text. Therefore you can directly
 						add .scene files to your git repository.
 					</p>
 					<p>
-						<b>IMPORTANT</b>: Asset serialization is HIGHLY recommended, 
-						having binary scene files will wreck havoc on your 
-						repository/cloud storage if say two developers tweak 
-						objects in the scene. 
+						<b>IMPORTANT</b>: Asset serialization is HIGHLY recommended,
+						having binary scene files will wreck havoc on your
+						repository/cloud storage if say two developers tweak
+						objects in the scene.
 					</p>
 					
 					<a href="http://imgur.com/90IQaTR" target="_blank" >
@@ -187,7 +187,7 @@
 					<p>
 						Hope this is useful for anyone contemplating how to 
 						manage their binary assets with Git. We don't have  a 
-						comment section on this blog yet, we can be reached 
+						comment section on this blog yet, but we can be reached
 						through email.
 					</p>
 				</div>
@@ -213,7 +213,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="blogInit.js"></script>
+	<script src="../scripts/blogInit.js"></script>
 </body>
 
 </html>
