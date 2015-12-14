@@ -29,4 +29,6 @@ function init() {
 	document.getElementById("paragraphLeft").style.width = paraWidth;
 	document.getElementById("paragraphRight").style.width = paraWidth;
 	document.getElementById("lastLine").style.width = width;
+	
 }
+
