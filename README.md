@@ -12,4 +12,5 @@ If you are planning to implement new features, content, etc., please create a ne
 Current developers are:
 - Arvind Suresh (arvindmc): (https://github.com/arvindmc)
 - Adipa Wijayathilaka (boarnoah): (https://github.com/boarnoah)
+- Ahmed Ashkir (poisonrune): (https://github.com/poisonrune)
 - Sriram Suresh (Sir Ram): (https://github.com/SirRam)
